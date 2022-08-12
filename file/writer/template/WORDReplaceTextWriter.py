@@ -33,7 +33,6 @@ class WORDReplaceTextWriter(GenericTextWriterTemplate):
         for paragraph in self.document.paragraphs:
             # Loop through runs (style spans)
             for variable_key in input_variables_keys:
-                #print(variable_key)
                 for run in paragraph.runs:
                     # if there is text on this run, replace it
                     if variable_key in run.text:

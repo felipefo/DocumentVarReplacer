@@ -39,7 +39,6 @@ class ODTReplaceTextWriter(GenericTextWriterTemplate):
                 update_document: bool = False
                 for variable_key in input_variables_keys:
                     if variable_key in old_text:
-                        # print(variable_key)
                         new_text = old_text.replace(variable_key,
                                                     self.configuration.get_variable_value(variable_key))
                     old_text = new_text
