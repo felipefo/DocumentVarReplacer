@@ -34,7 +34,8 @@ export.to.format = PDF
 ```
 Use python3 main.py to run
 ```
-python3 main.py
+pip install -r requirements.txt
+python main.py
 ```
 
 
