@@ -32,6 +32,11 @@ files.path.out=D:\python\output\documents
 # only pdf avaliable for now
 export.to.format = PDF
 ```
+Use python3 main.py to run
+```
+python3 main.py
+```
+
 
 An example of how to use variables in a template is depcited in the images bellow
 
@@ -40,3 +45,5 @@ An example of how to use variables in a template is depcited in the images bello
 And the results of that follows:
 
 ![Input template with variables](https://github.com/felipefo/DocumentVarReplacer/blob/main/output_example_documentation.png)
+
+
