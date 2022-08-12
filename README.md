@@ -23,7 +23,7 @@ c_1=Bacharelado de Sistemas de Informação
 c_2=Bacharel em Sistemas de Informação
 ```
 
-You need to set variable “file.path.out” to an appropriated path where you want that the created documents needs to be saved
+You need to set variable “file.path.out” to an appropriated path where you want that the created documents needs to be saved.
 Also you can set if you want to export to a PDF format, for now PDF is the only one supported
 ```
 [OUTPUT]
