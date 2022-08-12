@@ -1,5 +1,5 @@
 # DocumentVarReplacer
- Replaces variavles inside docx documents and  exports do pdf
+ Replaces variavles inside docx documents and  exports do pdf.
  This project has the main objectives to get a bunch of docx files, annotated with 
 variables(template), in order to produce docx and pdf files replacing those variables driven by a configuration file   
 
