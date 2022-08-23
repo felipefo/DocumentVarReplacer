@@ -1,4 +1,8 @@
 import unittest
+
+import sys
+sys.path.append("..")
+
 from src.file.writer.template.WORDReplaceTextWriter import WORDReplaceTextWriter
 from mock import Mock
 
