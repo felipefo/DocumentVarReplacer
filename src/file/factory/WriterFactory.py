@@ -11,7 +11,7 @@ from src.file.writer.template.WORDReplaceTextWriter import WORDReplaceTextWriter
 class WriterFactory:
 
     # get writer will return the appropriated type of writer if it is implemented
-    def get_writer(self, configuration: ConfigurationReader, document_path, file_name):
+    def get_writer(configuration: ConfigurationReader, document_path, file_name):
         replace_writer = None
         if file_name.endswith("ODT") or file_name.endswith("odt"):
             replace_writer = ODTReplaceTextWriter(configuration, document_path, file_name)

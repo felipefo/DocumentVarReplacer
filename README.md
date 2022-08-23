@@ -38,7 +38,6 @@ pip install -r requirements.txt
 python main.py
 ```
 
-
 An example of how to use variables in a template is depcited in the images bellow
 
 ![Input template with variables](https://github.com/felipefo/DocumentVarReplacer/blob/main/example_documentation.png)
@@ -46,5 +45,3 @@ An example of how to use variables in a template is depcited in the images bello
 And the results of that follows:
 
 ![Input template with variables](https://github.com/felipefo/DocumentVarReplacer/blob/main/output_example_documentation.png)
-
-
