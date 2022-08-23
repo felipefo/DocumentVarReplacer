@@ -47,5 +47,6 @@ class ODTReplaceTextWriter(GenericTextWriterTemplate):
                 if update_document:
                     texts[i].setText(new_text)
             except:
+                print("error")
                 pass
 

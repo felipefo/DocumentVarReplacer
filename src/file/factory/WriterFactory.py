@@ -18,5 +18,5 @@ class WriterFactory:
         elif file_name.endswith("docx") or file_name.endswith("DOCX"):
             replace_writer = WORDReplaceTextWriter(configuration, document_path, file_name)
         else:
-            raise NotImplemented("Document type not implemented yet")
+            raise Exception("Document type not implemented yet")
         return replace_writer
