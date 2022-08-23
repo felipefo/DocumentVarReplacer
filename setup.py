@@ -1,1 +1,1 @@
-packages = ['src/file']
+packages = ['src']
