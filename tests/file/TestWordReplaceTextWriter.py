@@ -5,6 +5,7 @@ from mock import Mock
 
 class TestWordReplaceTextWriter(unittest.TestCase):
 
+
     @unittest.expectedFailure
     def test_check_document_type(self):
         mock_configuration = Mock()
