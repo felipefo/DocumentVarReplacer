@@ -21,7 +21,6 @@ class WORDReplaceTextWriter(GenericTextWriterTemplate):
 
     def open_document(self):
         self.document = Document(self.document_path)
-        pass
 
     def save_document(self):
         new_file_name = self.configuration.get_output_base_path() + "\\" + self.document_name

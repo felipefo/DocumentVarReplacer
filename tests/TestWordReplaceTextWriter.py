@@ -1,6 +1,4 @@
 import unittest
-from unittest.mock import MagicMock
-from src.file.ConfigurationReader import ConfigurationReader
 from src.file.writer.template.WORDReplaceTextWriter import WORDReplaceTextWriter
 from mock import Mock
 
@@ -8,7 +6,7 @@ from mock import Mock
 class TestWordReplaceTextWriter(unittest.TestCase):
 
     @unittest.expectedFailure
-    def test_check_document_type():
+    def test_check_document_type(self):
         mock_configuration = Mock()
         word_replace = WORDReplaceTextWriter(mock_configuration, ".//teste.odt", "")
         word_replace.check_document_type()
