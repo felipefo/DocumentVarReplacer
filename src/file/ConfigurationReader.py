@@ -6,7 +6,7 @@ import os
 
 
 class ConfigurationReader:
-    CONFIGURATION_FILE = "./Configuration.properties"
+    configuration_file = ""
     input_files = {}
     input_file_path = ""
     output_files = {}
@@ -14,9 +14,10 @@ class ConfigurationReader:
     output_base_path=""
     config: configparser.ConfigParser
 
-    def __init__(self):
+    def __init__(self, configuration_file: str):
+        self.configuration_file = configuration_file
         self.config = configparser.ConfigParser()
-        self.config.read(self.CONFIGURATION_FILE)
+        self.config.read(self.configuration_file)
         self.input_file_path = self.config['INPUT']['files.path.in']
         self.output_base_path = self.config['OUTPUT']['files.path.out']
         self.input_variables = self.config['INPUT_VARIABLES']

@@ -3,8 +3,8 @@ Class responsable for convert a docx documento to pdf
 """
 from docx2pdf import convert
 
-from file.writer.strategy.GenericExporter import GenericExporter
-from file.ConfigurationReader import ConfigurationReader
+from src.file.writer.strategy.GenericExporter import GenericExporter
+from src.file.ConfigurationReader import ConfigurationReader
 
 
 class DOCxToPDFExport(GenericExporter):

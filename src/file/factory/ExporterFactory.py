@@ -3,8 +3,8 @@ Class responsable creating exporter for an especific format
 """
 
 
-from file.ConfigurationReader import ConfigurationReader
-from file.writer.strategy.DOCxToPDFExport import DOCxToPDFExport
+from src.file.ConfigurationReader import ConfigurationReader
+from src.file.writer.strategy.DOCxToPDFExport import DOCxToPDFExport
 
 
 class ExporterFactory:
