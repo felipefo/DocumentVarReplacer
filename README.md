@@ -16,6 +16,7 @@ files.path.in=D:\python\input\com_coorientador
 for instance, if you want to replace from the input variable "c_1" in the exported document
 to "Bacharelado de Sistemas de Informação", just declare it as depicted bellow.
 
+*The library used to replace reflects docsx structure, so we used names like c_1, c_2 in order to RUN/SPAN do not split by word spell checks. Then you should not use labels to variables that are words, if you do that, word will break the works in more than one RUN and python library used will not be able to acomplish the replacement in the document. 
 
 ```
 [INPUT_VARIABLES]
