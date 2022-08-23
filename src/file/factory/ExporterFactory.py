@@ -15,5 +15,5 @@ class ExporterFactory:
         if file_name.endswith("docx") or file_name.endswith("DOCX"):
             exporter = DOCxToPDFExport(configuration, document_path, file_name)
         else:
-            raise NotImplemented("Document type not implemented yet")
+            raise Exception("Document type not implemented yet")
         return exporter
