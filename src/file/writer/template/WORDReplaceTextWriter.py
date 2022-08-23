@@ -3,8 +3,8 @@ Class responsable for open, save and replace all variables in files with ODT for
 """
 
 from docx import Document
-from file.ConfigurationReader import ConfigurationReader
-from file.writer.template.GenericTextWriterTemplate import GenericTextWriterTemplate
+from src.file.ConfigurationReader import ConfigurationReader
+from src.file.writer.template.GenericTextWriterTemplate import GenericTextWriterTemplate
 import re
 
 

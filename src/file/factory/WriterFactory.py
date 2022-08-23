@@ -3,9 +3,9 @@ Class responsable creating replacer for an especific format
 """
 
 
-from file.ConfigurationReader import ConfigurationReader
-from file.writer.template.ODTReplaceTextWriter import ODTReplaceTextWriter
-from file.writer.template.WORDReplaceTextWriter import WORDReplaceTextWriter
+from src.file.ConfigurationReader import ConfigurationReader
+from src.file.writer.template.ODTReplaceTextWriter import ODTReplaceTextWriter
+from src.file.writer.template.WORDReplaceTextWriter import WORDReplaceTextWriter
 
 
 class WriterFactory:
