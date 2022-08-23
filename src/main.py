@@ -1,13 +1,12 @@
-from src.file.ConfigurationReader import ConfigurationReader
-from src.file.factory.ExporterFactory import ExporterFactory
-from src.file.factory.WriterFactory import WriterFactory
-
-from src.file.writer.strategy.GenericExporter import GenericExporter
 
 """ 
 getting the class that handles all configurations like input path, output path and variables that
 needs to be replaced into the new document
 """
+from src.file.ConfigurationReader import ConfigurationReader
+from src.file.factory.ExporterFactory import ExporterFactory
+from src.file.factory.WriterFactory import WriterFactory
+from src.file.writer.strategy.GenericExporter import GenericExporter
 
 configuration = ConfigurationReader("../Configuration.properties")
 file_names = configuration.get_input_files()

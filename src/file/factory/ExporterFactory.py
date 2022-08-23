@@ -1,8 +1,6 @@
 """
 Class responsable creating exporter for an especific format
 """
-
-
 from src.file.ConfigurationReader import ConfigurationReader
 from src.file.writer.strategy.DOCxToPDFExport import DOCxToPDFExport
 

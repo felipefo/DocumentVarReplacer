@@ -5,6 +5,7 @@ Class responsable for open, save and replace all variables in files with ODT for
 import odf
 from odf.opendocument import load
 from odf import text, teletype
+
 from src.file.ConfigurationReader import ConfigurationReader
 from src.file.writer.template.GenericTextWriterTemplate import GenericTextWriterTemplate
 

@@ -3,6 +3,7 @@ A generic class forces the concrete writer to implement a specific  writer like 
 """
 
 from abc import ABC, abstractmethod
+
 from src.file.ConfigurationReader import ConfigurationReader
 
 
