@@ -26,7 +26,6 @@ class TestWordReplaceTextWriter(unittest.TestCase):
 
         word_replace.open_document()
         word_replace.replace_variable_document()
-        word_replace.save_document()
         error = True
         for paragraph in word_replace.document.paragraphs:
             for run in paragraph.runs:
