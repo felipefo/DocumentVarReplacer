@@ -9,13 +9,8 @@ class TestWordReplaceTextWriter(unittest.TestCase):
     @unittest.expectedFailure
     def test_check_document_type(self):
         mock_configuration = Mock()
-        word_replace = WORDReplaceTextWriter(mock_configuration, ".//teste.odt", "")
+        word_replace = WORDReplaceTextWriter(mock_configuration, "./tests/teste.odt", "")
         word_replace.check_document_type()
-
-        for root, dirs, files in os.walk("."):
-            for filename in files:
-                print(filename)
-
 
     def test_replace_variable_document(self):
 
@@ -26,8 +21,8 @@ class TestWordReplaceTextWriter(unittest.TestCase):
         mock_configuration.get_output_base_path.return_value = './'
 
         word_replace = WORDReplaceTextWriter(mock_configuration,
-                                             "/home/runner/work/DocumentVarReplacer/DocumentVarReplacer/tests/teste.docx",
-                                             ".//teste_out.docx")
+                                             "./tests/teste.docx",
+                                             "./tests/teste_out.docx")
 
         word_replace.open_document()
         word_replace.replace_variable_document()
