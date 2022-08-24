@@ -1,14 +1,10 @@
 import unittest
 
-import sys
-sys.path.append("..")
-
-from src.file.writer.template.WORDReplaceTextWriter import WORDReplaceTextWriter
+from ..src.file.writer.template.WORDReplaceTextWriter import WORDReplaceTextWriter
 from mock import Mock
 
 
 class TestWordReplaceTextWriter(unittest.TestCase):
-
 
     @unittest.expectedFailure
     def test_check_document_type(self):
