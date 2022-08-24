@@ -19,10 +19,10 @@ class TestWordReplaceTextWriter(unittest.TestCase):
         mock_configuration.get_variable_value.return_value = "replace_c_1"
         mock_configuration.output_base_path.return_value = './'
         mock_configuration.get_output_base_path.return_value = './'
-
+        path = os.getcwd()
         word_replace = WORDReplaceTextWriter(mock_configuration,
-                                             "../tests/teste.docx",
-                                             "../tests/teste_out.docx")
+                                             path + "//tests//teste.docx",
+                                             path + "//tests//teste_out.docx")
 
         word_replace.open_document()
         word_replace.replace_variable_document()
