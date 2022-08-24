@@ -1,6 +1,6 @@
 
 import unittest
-from .. src.file.ConfigurationReader import ConfigurationReader
+from src.file.ConfigurationReader import ConfigurationReader
 
 
 class TesteConfigurationReader(unittest.TestCase):

@@ -1,6 +1,6 @@
 import unittest
 
-from ..src.file.writer.template.WORDReplaceTextWriter import WORDReplaceTextWriter
+from src.file.writer.template.WORDReplaceTextWriter import WORDReplaceTextWriter
 from mock import Mock
 
 
