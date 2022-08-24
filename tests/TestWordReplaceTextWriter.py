@@ -21,7 +21,7 @@ class TestWordReplaceTextWriter(unittest.TestCase):
         mock_configuration.get_output_base_path.return_value = './'
 
         word_replace = WORDReplaceTextWriter(mock_configuration,
-                                             "/home/runner/work/DocumentVarReplacer/DocumentVarReplacer/teste.docx",
+                                             "/home/runner/work/DocumentVarReplacer/DocumentVarReplacer/tests/teste.docx",
                                              ".//teste_out.docx")
 
         word_replace.open_document()
