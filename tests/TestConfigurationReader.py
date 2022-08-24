@@ -7,7 +7,7 @@ class TesteConfigurationReader(unittest.TestCase):
 
     def test_variable_reader(self):
         path = os.getcwd()
-        configuration = ConfigurationReader(path + "//TestConfiguration.properties")
+        configuration = ConfigurationReader(path + "//tests//TestConfiguration.properties")
         self.assertEqual(".//tests//", configuration.get_input_base_path())
         self.assertEqual(".//tests//", configuration.get_output_base_path())
         self.assertEqual("Bacharelado de Sistemas de Informacao", configuration.get_variable_value("c_1"))
