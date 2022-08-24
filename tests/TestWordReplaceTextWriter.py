@@ -2,7 +2,7 @@ import unittest
 
 from src.file.writer.template.WORDReplaceTextWriter import WORDReplaceTextWriter
 from mock import Mock
-
+import os
 
 class TestWordReplaceTextWriter(unittest.TestCase):
 
@@ -11,6 +11,11 @@ class TestWordReplaceTextWriter(unittest.TestCase):
         mock_configuration = Mock()
         word_replace = WORDReplaceTextWriter(mock_configuration, ".//teste.odt", "")
         word_replace.check_document_type()
+
+        for root, dirs, files in os.walk("."):
+            for filename in files:
+                print(filename)
+
 
     def test_replace_variable_document(self):
 
