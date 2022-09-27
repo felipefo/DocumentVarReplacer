@@ -7,6 +7,7 @@ variables(template), in order to produce docx and pdf files, replacing those var
 
 You need to set variable “file.path.in” to an appropriated path where your documents are located
 
+
 ```
 [INPUT]
 files.path.in=D:\python\input\com_coorientador
